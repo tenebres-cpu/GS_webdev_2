@@ -20,11 +20,27 @@ const Cadastrar = () => {
     }));
   };
  
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    console.log('Form submitted:', formData);
-    // Lógica de cadastro aqui
-  };
+const handleSubmit = (e) => {
+  e.preventDefault();
+
+  fetch('http://localhost:5000/cadastrar', {
+    method: 'POST',                    // tipo da requisição
+    headers: {
+      'Content-Type': 'application/json', // informando que o corpo é JSON
+    },
+    body: JSON.stringify(formData),   // transforma objeto em JSON para enviar
+  })
+  .then(response => response.json()) // pega a resposta e transforma em JSON
+  .then(data => {
+    console.log('Resposta do backend:', data);
+    alert(data.message || 'Cadastro realizado com sucesso!');
+  })
+  .catch(error => {
+    console.error('Erro ao enviar dados:', error);
+    alert('Erro ao enviar dados.');
+  });
+};
+
  
   return (
     <div className="min-h-screen flex flex-col">
