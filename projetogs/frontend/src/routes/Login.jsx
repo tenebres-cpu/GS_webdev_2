@@ -9,7 +9,7 @@ const Login = () => {
  
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Lógica de autenticação aqui
+
     console.log('Login attempt:', { email, password });
   };
  

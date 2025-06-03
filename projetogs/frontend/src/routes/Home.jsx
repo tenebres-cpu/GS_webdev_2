@@ -34,7 +34,7 @@ const Home = () => {
       <Nav />
      
       <main className="flex-grow">
-        {/* Hero Section */}
+        {}
         <section className="relative bg-blue-700 text-white py-20">
           <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1591488320449-011701bb6704?q=80&w=2070')] bg-cover bg-center opacity-30"></div>
           <div className="container mx-auto px-6 relative z-10">
@@ -51,7 +51,7 @@ const Home = () => {
           </div>
         </section>
  
-        {/* Stats Section */}
+        {}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">O Problema em Números</h2>
@@ -67,7 +67,7 @@ const Home = () => {
           </div>
         </section>
  
-        {/* Features Section */}
+        {}
         <section className="py-16 bg-blue-50">
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold text-center mb-12 text-gray-800">Como a Tecnologia Pode Ajudar</h2>
@@ -83,7 +83,7 @@ const Home = () => {
           </div>
         </section>
  
-        {/* Call to Action */}
+        {}
         <section className="py-16 bg-blue-700 text-white">
           <div className="container mx-auto px-6 text-center">
             <h2 className="text-3xl font-bold mb-6">Quer Receber Alertas de Enchentes?</h2>

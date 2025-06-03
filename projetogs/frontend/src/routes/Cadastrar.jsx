@@ -24,13 +24,13 @@ const handleSubmit = (e) => {
   e.preventDefault();
 
   fetch('http://localhost:5000/cadastrar', {
-    method: 'POST',                    // tipo da requisição
+    method: 'POST',                    
     headers: {
-      'Content-Type': 'application/json', // informando que o corpo é JSON
+      'Content-Type': 'application/json', 
     },
-    body: JSON.stringify(formData),   // transforma objeto em JSON para enviar
+    body: JSON.stringify(formData),   
   })
-  .then(response => response.json()) // pega a resposta e transforma em JSON
+  .then(response => response.json()) 
   .then(data => {
     console.log('Resposta do backend:', data);
     alert(data.message || 'Cadastro realizado com sucesso!');
