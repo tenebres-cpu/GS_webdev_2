@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { FaHome, FaInfoCircle, FaTools, FaSignInAlt, FaUserPlus, FaWater } from 'react-icons/fa';
- 
+import { FaHome, FaInfoCircle, FaTools, FaSignInAlt, FaUserPlus, FaWater, FaComments } from 'react-icons/fa';
+
 const Nav = () => {
   return (
     <header className="bg-blue-600 text-white p-4 shadow-md">
@@ -21,6 +20,9 @@ const Nav = () => {
           <Link to="/solucao" className="flex items-center hover:text-blue-200 transition">
             <FaTools className="mr-1" /> Soluções
           </Link>
+          <Link to="/chat" className="flex items-center hover:text-blue-200 transition">
+            <FaComments className="mr-1" /> Chat
+          </Link>
           <Link to="/login" className="flex items-center hover:text-blue-200 transition">
             <FaSignInAlt className="mr-1" /> Login
           </Link>
@@ -32,5 +34,5 @@ const Nav = () => {
     </header>
   );
 }
- 
+
 export default Nav;

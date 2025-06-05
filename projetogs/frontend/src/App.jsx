@@ -6,9 +6,9 @@ import Solucao from './routes/Solucao'
 import Login from './routes/Login'
 import Cadastrar from './routes/Cadastrar'
 import Error from './routes/Error'
- 
+import Chat from './routes/Chat' 
+
 function App() {
-  
   return (
     <BrowserRouter>
       <Routes>
@@ -17,10 +17,11 @@ function App() {
         <Route path="/solucao" element={<Solucao />} />
         <Route path="/login" element={<Login />} />
         <Route path="/cadastrar" element={<Cadastrar />} />
+        <Route path="/chat" element={<Chat />} /> {}
         <Route path="*" element={<Error />} />
       </Routes>
     </BrowserRouter>
   )
 }
- 
-export default App;
+
+export default App
